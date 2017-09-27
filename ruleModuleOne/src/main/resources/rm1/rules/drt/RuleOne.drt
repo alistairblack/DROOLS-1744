@@ -1,0 +1,21 @@
+template header
+parameter
+
+package rm1.rules;
+
+import my.drools.templates.facts.FactOne;
+import my.drools.templates.facts.RuleResponse;
+
+global my.drools.templates.facts.RuleResponse response;
+
+dialect "mvel"
+
+template "ruleOneTemplate"
+    rule "Rule One :: @{parameter}_@{row.rowNumber}"
+        when
+            FactOne($value:parameterName, parameterName!=null)
+            Boolean(booleanValue==true) from $value.contains(" @{parameter} ")
+        then
+            response.setResult(true);
+    end
+end template

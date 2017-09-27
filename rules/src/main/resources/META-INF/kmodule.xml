@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+    <kbase name="inheritedTemplateModules-ruleModule_1_kbase" default="false" includes="ruleModule_1_kbase" packages="*">
+        <ksession name="ruleModule-1" default="false" type="stateless"/>
+    </kbase>
+</kmodule>

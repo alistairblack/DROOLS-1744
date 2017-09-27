@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+    <kbase name="ruleModule_1_kbase" default="false" packages="rm1.rules.drl,rm1.rules.table,rm1.rules.drt,rm1.rules.drtdata">
+        <ruleTemplate dtable="rm1/rules/drtdata/RuleOne.xls"
+                      template="rm1/rules/drt/RuleOne.drt"
+                      row="3" col="2"/>
+        <ruleTemplate dtable="rm1/rules/drtdata/RuleTwo.xls"
+                      template="rm1/rules/drt/RuleTwo.drt"
+                      row="3" col="2"/>
+        <ksession name="ruleModule-1" default="false" type="stateless"/>
+    </kbase>
+</kmodule>
